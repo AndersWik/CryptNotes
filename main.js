@@ -8,9 +8,6 @@ const user = electron.app.getPath('userData');
 var store = require('./assets/js/store.js');
 var crypt = require('./assets/js/crypt.js');
 
-store.setHome(user);
-store.homeExist();
-
 const mainMenuTemplate = [
   {
     label: 'File',
@@ -146,6 +143,8 @@ ipcMain.on('noteEdit', (event, arg) => {
 });
 
 app.on('ready', function() {
+  store.setHome(user);
+  store.homeExist();
   store.getAllFiles();
   createMenu();
   createWindow();
