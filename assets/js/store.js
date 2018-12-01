@@ -6,7 +6,7 @@ var notes = [];
 
 exports.setHome = function(user) {
 
-    home = path.join(user, 'httpsNotes');
+    home = path.join(user, 'files');
 }
 
 exports.getNotes = function() {
