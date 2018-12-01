@@ -1,0 +1,24 @@
+{
+  "name": "CryptNotes",
+  "version": "1.0.0",
+  "description": "Taking notes.",
+  "main": "main.js",
+  "scripts": {
+    "start": "Electron .",
+    "test": "test",
+    "build": "electron-packager . CryptNotes && cp ./assets/img/icon-sm.icns CryptNotes-darwin-x64/CryptNotes.app/Contents/Resources/electron.icns"
+  },
+  "keywords": [
+    "Notes"
+  ],
+  "author": "anders wik",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-packager": "^12.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  }
+}

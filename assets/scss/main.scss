@@ -1,0 +1,84 @@
+%card {
+    border: 5px solid #000;
+    border-radius: 30px;
+    min-height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to top left, #feffff 60%, #ddf1f9 73%, #a0d8ef 96% );
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+body > .container {
+
+    p.icon {
+        float: left;
+        padding-right: 10px;
+    }
+
+    #lock {
+
+        @extend %card;
+    
+        max-height: 525px;
+        height: 525px;
+
+        p {
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        button {
+            border-color: #a0d8ef;
+            background-color: #a0d8ef;
+            color: #323232;
+        }
+    }
+
+    #notes {
+
+        @extend %card;
+    
+        max-height: 525px;
+        height: 525px;
+        overflow: scroll;
+
+        .content {
+
+            overflow:scroll;
+        }
+
+        .note {
+
+            .label {
+
+                margin-bottom: 0px;
+            }
+
+            .obfuscated {
+
+                font-weight: 800;
+                font-size: 15px;
+            }
+        }
+    }
+
+    #add, #edit {
+
+        @extend %card;
+    
+        max-height: 525px;
+        height: 525px;
+
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .red {
+        color: #cc0000;
+    }
+}
