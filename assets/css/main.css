@@ -1,0 +1,57 @@
+body > .container #add, body > .container #edit, body > .container #notes, body > .container #lock {
+  border: 5px solid #000;
+  border-radius: 30px;
+  min-height: 400px;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(to top left, #feffff 60%, #ddf1f9 73%, #a0d8ef 96%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+body > .container p.icon {
+  float: left;
+  padding-right: 10px;
+}
+body > .container #lock {
+  max-height: 525px;
+  height: 525px;
+}
+body > .container #lock p {
+  text-align: center;
+}
+body > .container #lock input {
+  text-align: center;
+}
+body > .container #lock button {
+  border-color: #a0d8ef;
+  background-color: #a0d8ef;
+  color: #323232;
+}
+body > .container #notes {
+  max-height: 525px;
+  height: 525px;
+  overflow: scroll;
+}
+body > .container #notes .content {
+  overflow: scroll;
+}
+body > .container #notes .note .label {
+  margin-bottom: 0px;
+}
+body > .container #notes .note .obfuscated {
+  font-weight: 800;
+  font-size: 15px;
+}
+body > .container #add, body > .container #edit {
+  max-height: 525px;
+  height: 525px;
+}
+body > .container #add input, body > .container #add textarea, body > .container #edit input, body > .container #edit textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+body > .container .red {
+  color: #cc0000;
+}
+
+/*# sourceMappingURL=main.css.map */
