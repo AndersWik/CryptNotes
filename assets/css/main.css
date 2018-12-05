@@ -41,6 +41,9 @@ body > .container #notes .note .label {
 body > .container #notes .note .obfuscated {
   font-weight: 800;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 200px;
 }
 body > .container #add, body > .container #edit {
   max-height: 525px;
